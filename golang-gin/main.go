@@ -32,7 +32,7 @@ func main() {
 	router := gin.Default()
 
 	//serve static files (html / css / js)
-	router.Use(static.Serve("/", static.LocalFile("./views", true)))
+	router.Use(static.Serve("/", static.LocalFile("../reactFront/views", true)))
 
 	// route group for API
 	api := router.Group("/api") 
