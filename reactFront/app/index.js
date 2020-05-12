@@ -1,16 +1,16 @@
-import React from 'React'
-import ReactDOM from 'react-dom'
-import './index.css'
+import React from 'React';
+import ReactDOM from 'react-dom';
+import './index.css';
+import Home from '../components/Home';
 
 class App extends React.Component {
     render(){
-        return(
-            <div>
-                <h2>Hey, it's working :D</h2>
-                <p>yup</p>
-            </div>
-        )
+        if (this.loggedIn) {
+            return (<LoggedIn />);
+          } else {
+            return (<Home />);
+          }
     }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(<App />, document.getElementById('app'));
