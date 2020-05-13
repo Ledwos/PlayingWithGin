@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 require('dotenv').config();
 import './index.css';
 import Home from '../components/Home';
+import LoggedIn from './components/LoggedIn';
 
 class App extends React.Component {
   
